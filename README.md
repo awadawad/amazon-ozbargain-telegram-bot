@@ -28,7 +28,7 @@ pip3 install -r requirements.txt
 Simply execute the following in a terminal to run the script in the background (logs are outputted to `bot_out.log`)
 
 ```
-nohup python -u ./amazon_bot.py > bot_out.log &
+nohup python3 -u ./amazon_bot.py > bot_out.log 2>&1 &
 ```
 
 At 5 min intervals, the bot will call off to ozbargain to check if there are any new amazon deals.
